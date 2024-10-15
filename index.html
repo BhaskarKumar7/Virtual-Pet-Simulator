@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual pet simulator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body onload="loadContent()">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <p class="h1 justify-content-start">Virutal pet simulator</p>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6" id="pet-div">
+            </div>
+            <div class="col-md-6">
+                <div class="row mb-3">
+                    PRESENT HUNGER PROGRESS&nbsp;&nbsp;&nbsp;
+                    <div class="col-md-12">
+                        <div class="progress" id="hungerIndex" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                            <div id="hugnerProgress" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    PRESENT HAPPINESS PROGRESS&nbsp;&nbsp;&nbsp;
+                    <div class="col-md-12">
+                        <div class="progress" id="hapinessIndex" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                            <div id="hapinessProgress" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    PRESENT ENERGY PROGRESS&nbsp;&nbsp;&nbsp;
+                    <div class="col-md-12">
+                        <div class="progress" id="energyIndex" role="progressbar" aria-label="Animated striped example" aria-valuemin="0" aria-valuemax="100">
+                            <div id="energyProgress" class="progress-bar progress-bar-striped progress-bar-animated"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                     <div class="col-md-4">
+                        <button type="button" id="feedBtn" onclick="feedTheCat()" class="btn btn-success btn-sm">Feed the cat</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="sleepBtn" onclick="sleepTheCat()" class="btn btn-primary btn-sm">Make it sleep</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="danceBtn" onclick="danceTheCat()" class="btn btn-info btn-sm">Ask to dance</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
